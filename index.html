@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lezhi Wang</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav>
+    <span class="nav-name">Lezhi Wang</span>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Hi, I'm</p>
+      <h1>Lezhi Wang</h1>
+      <p class="hero-subtitle">Statistics & Analytics @ UNC Chapel Hill &mdash; Minor in Data Science</p>
+      <p class="hero-desc">I build data-driven models, analyze complex systems, and turn messy datasets into clear insights. Currently seeking opportunities in data analytics and quantitative research.</p>
+      <div class="hero-links">
+        <a href="#contact" class="btn">Get in Touch</a>
+        <a href="#projects" class="btn btn-outline">View Projects</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm a junior at the <strong>University of North Carolina at Chapel Hill</strong> studying Statistics & Analytics with a minor in Data Science (GPA: 3.94, Dean's List). I'm passionate about applying statistical modeling and machine learning to real-world problems — from financial analytics to sports forecasting to social science research.</p>
+          <p>My work spans both academic research and industry experience. I've interned at a major securities firm in China, and I'm currently conducting undergraduate independent research on human-AI content dynamics using game-theoretic modeling.</p>
+          <p>Outside of work, I enjoy boxing, strength training, dance performance, independent travel, and live music.</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-num">3.94</span>
+            <span class="stat-label">GPA</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">3+</span>
+            <span class="stat-label">Research Projects</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">10K+</span>
+            <span class="stat-label">Agents Simulated</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">30%</span>
+            <span class="stat-label">Efficiency Gain at Internship</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <span class="timeline-date">Aug 2025 &ndash; Present</span>
+            <span class="timeline-tag">Research</span>
+          </div>
+          <div class="timeline-body">
+            <h3>Undergraduate Independent Researcher</h3>
+            <p class="timeline-org">University of North Carolina at Chapel Hill &mdash; Chapel Hill, NC</p>
+            <ul>
+              <li>Designed a human-AI hybrid content generation model, representing outputs as a continuous mixture of human and LLM distributions.</li>
+              <li>Implemented game-theoretic simulation in Python (NumPy, Matplotlib) modeling 10,000+ agent market competition, achieving equilibrium convergence in &lt;200 iterations via gradient descent optimization.</li>
+              <li>Conducted sensitivity analysis across 50+ parameter scenarios to analyze human-AI creator dynamics under varying market structures.</li>
+              <li>Automated data visualization and reporting pipeline; documented findings in LaTeX technical reports for publication-track research.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <span class="timeline-date">May 2024 &ndash; Aug 2024</span>
+            <span class="timeline-tag">Internship</span>
+          </div>
+          <div class="timeline-body">
+            <h3>Data Analytics Intern</h3>
+            <p class="timeline-org">CITIC Securities Company Limited &mdash; Shenzhen, China</p>
+            <ul>
+              <li>Analyzed large-scale client transaction and portfolio data using SQL and Python to identify trends in trading patterns, driving portfolio optimization recommendations.</li>
+              <li>Built automated dashboards and summary tables used by 10+ analysts to monitor monthly client activity.</li>
+              <li>Automated recurring reports using Excel formulas and pivot tables, reducing manual reporting time by 8 hours/week and improving team efficiency by 30%.</li>
+              <li>Performed data cleaning and standardization, improving dataset reliability for downstream analysis.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3>Automotive Market Modeling</h3>
+            <span class="project-date">May &ndash; Dec 2025</span>
+          </div>
+          <p class="project-tags">R &middot; Regression &middot; Model Selection &middot; Cross-Validation</p>
+          <ul>
+            <li>Built a multivariate regression pricing model in R to predict second-hand vehicle market values.</li>
+            <li>Curated and processed 150+ regional vehicle listings scraped from Craigslist.</li>
+            <li>Selected final model via joint AIC, Cp, and cross-validated error minimization, achieving test-set RMSE of 2.4 (~23% improvement over baseline).</li>
+            <li>Achieved Adjusted R&sup2; = 0.79 using core predictors such as vehicle age and odometer.</li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3>NBA Game Outcome Modeling</h3>
+            <span class="project-date">Jan &ndash; May 2025</span>
+          </div>
+          <p class="project-tags">R &middot; Tidyverse &middot; MASS &middot; Car</p>
+          <ul>
+            <li>Built a data extraction and preprocessing pipeline to scrape and standardize 2024&ndash;2025 NBA team-level statistics for all 30 teams.</li>
+            <li>Engineered differential performance metrics (point differential, steals, etc.) to forecast game outcomes.</li>
+            <li>Removed collinear features using Variance Inflation Factor (VIF) analysis.</li>
+            <li>Applied backward stepwise selection optimized for AIC, achieving Adjusted R&sup2; &asymp; 0.89.</li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3>Hate Crime Predictive Analysis</h3>
+            <span class="project-date">May &ndash; Dec 2024</span>
+          </div>
+          <p class="project-tags">R &middot; Lasso Regression &middot; EDA</p>
+          <ul>
+            <li>Conducted EDA on 3,200+ NYPD hate crime incident logs (2019&ndash;2024) to analyze temporal patterns and event-driven spikes.</li>
+            <li>Engineered features from sparse categorical variables using frequency-based binning and binary encoding.</li>
+            <li>Applied Lasso regression for high-dimensional feature selection on socioeconomic variables.</li>
+            <li>Built predictive models achieving MAE = 1.66, outperforming baseline daily-count forecasts.</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h4>Languages</h4>
+          <div class="skill-pills">
+            <span>R</span><span>Python</span><span>SQL</span><span>Java</span><span>HTML/CSS</span><span>LaTeX</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Libraries</h4>
+          <div class="skill-pills">
+            <span>pandas</span><span>NumPy</span><span>Matplotlib</span><span>Tidyverse</span><span>ggplot2</span><span>dplyr</span><span>MASS</span><span>Car</span><span>Leaps</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Tools</h4>
+          <div class="skill-pills">
+            <span>Git</span><span>Docker</span><span>Tableau</span><span>Jupyter</span><span>VS Code</span><span>Excel</span><span>GAMS</span><span>Jamovi</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Coursework</h4>
+          <div class="skill-pills">
+            <span>Machine Learning</span><span>Data Models &amp; Inference</span><span>Methods of Data Analysis</span><span>Linear Algebra</span><span>Probability</span><span>Discrete Mathematics</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p class="contact-intro">I'm open to data analytics roles, quantitative research positions, and master's program opportunities. Feel free to reach out!</p>
+      <div class="contact-links">
+        <a href="mailto:wanglezhi0610@gmail.com" class="contact-item">
+          <span class="contact-icon">✉</span>
+          wanglezhi0610@gmail.com
+        </a>
+        <a href="https://github.com/lezhi0610" class="contact-item" target="_blank" rel="noopener">
+          <span class="contact-icon">⌥</span>
+          github.com/lezhi0610
+        </a>
+        <a href="tel:9843630610" class="contact-item">
+          <span class="contact-icon">✆</span>
+          984.363.0610
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Lezhi Wang &copy; 2026 &mdash; Built with HTML &amp; CSS</p>
+  </footer>
+
+</body>
+</html>
